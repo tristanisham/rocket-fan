@@ -1,0 +1,39 @@
+{
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "The formula for the circumference of a circle is:\n\n**Circumference (C) = 2πr**\n\nwhere:\n\n* **C** is the circumference\n* **π (pi)** is a mathematical constant approximately equal to 3.14159\n* **r** is the radius of the circle\n\n**Calculation:**\n\nGiven r = 3, we can calculate the circumference as follows:\n\nC = 2πr\nC = 2 * 3.14159 * 3\n**C = 18.84955**\n\nTherefore, the circumference of a circle with a radius of 3 is approximately **18.85 units**. \n"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 26,
+      "candidatesTokenCount": 148,
+      "totalTokenCount": 174
+    }
+  }
