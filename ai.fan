@@ -4,8 +4,8 @@ class Gemini {
     construct client(apiKey, model) {
         _key = apiKey
 
-        if (model == null) {
-            _model = ""
+        if (model == null || !(model is String)) {
+            _model = "gemini-1.5-flash"
         } else if (model is String) {
             _model = model
         }
@@ -17,8 +17,7 @@ class Gemini {
         var req = Request.new(_url)
         req.header("Content-Type", "application/json")
         req.method("POST")
-        var content = "{\"contents\": [{\"parts\":[{\"text\": \"%(message)\"}]}]}"
-
+        var content = "{\"contents\":[{\"parts\":[{\"text\":\"%(message)\"}]}]}"
         req.body(content)
 
         var resp = req.send()
